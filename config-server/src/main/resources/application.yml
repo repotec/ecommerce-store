@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-sever
+  profiles:    active: dev
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+  profiles:
+     active: dev
+ 
+server:
+  port: 8888
+  
+  
+
+  
