@@ -1,12 +1,12 @@
 spring:
   application:
     name: config-sever
-  profiles:    active: dev
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/shared
+        git:
+          uri : https://github.com/repotec/ecommerce-store/tree/master/config-server/src/main/resources/shared
+      
   profiles:
      active: dev
  
